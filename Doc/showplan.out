@@ -1,0 +1,60 @@
+
+
+---------------------------------------------
+DATE: 0
+VER:  12.00.4518
+
+NOTE: Currently does not handle subqueries, vt parameters, and subqueries
+NOTE: You may see ERROR messages in these cases
+
+
+
+--- temp query ---
+
+- Inputs to Query -
+Table 'VIEWS'
+- End inputs to Query -
+
+01) Restrict rows of table VIEWS
+      by scanning
+      testing expression "Not 0=0"
+
+
+
+--- temp query ---
+
+- Inputs to Query -
+Table 'VIEWS'
+- End inputs to Query -
+
+01) Restrict rows of table VIEWS
+      by scanning
+      testing expression "Not 0=0"
+
+
+
+--- temp query ---
+
+- Inputs to Query -
+Table 'ChartsReports'
+- End inputs to Query -
+
+01) Restrict rows of table ChartsReports
+      using rushmore
+      for expression "Code>-1"
+      then test expression "Type=1"
+02) Sort result of '01)'
+
+
+
+--- temp query ---
+
+- Inputs to Query -
+Table 'ChartsReports'
+- End inputs to Query -
+
+01) Restrict rows of table ChartsReports
+      using rushmore
+      for expression "Code>-1"
+      then test expression "Type=1"
+02) Sort result of '01)'
